@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Titan Forge Gym - Premium 24/7 High-Performance Fitness, Olympic Lifting, HIIT, and Recovery Spa. Claim your free 1-day pass today.">
+  <meta name="theme-color" content="#0a0a0c">
+  <title>TITAN FORGE GYM | Forged in Iron. Defined by Discipline.</title>
+
+  <!-- Google Fonts: Inter and Bebas Neue with display=swap for zero FOIT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- FLASH SALE TOP BAR -->
+  <aside class="announcement-bar" role="region" aria-label="Announcement">
+    <div class="announcement-content">
+      <span class="announcement-badge">⚡ FLASH OFFER</span>
+      <span class="announcement-text"><strong>$0 INITIATION FEE</strong> + 1ST MONTH 50% OFF | CLAIM BEFORE MIDNIGHT</span>
+    </div>
+  </aside>
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#" class="brand-logo" aria-label="Titan Forge Gym Home">
+        <span class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m6.5 6.5 11 11"/><path d="m21 21-1-1"/><path d="m3 3 1 1"/><path d="m18 22 4-4"/><path d="m2 6 4-4"/><path d="m3 10 7-7"/><path d="m14 21 7-7"/>
+          </svg>
+        </span>
+        <span class="brand-name">TITAN<span class="accent-orange">FORGE</span></span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Main Desktop Navigation">
+        <ul class="nav-list">
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#plans" class="nav-link">Memberships</a></li>
+          <li><a href="#trainers" class="nav-link">Coaches</a></li>
+          <li><a href="#gallery" class="nav-link">Facility</a></li>
+          <li><a href="#reviews" class="nav-link">Results</a></li>
+          <li><a href="#contact" class="nav-link">Location</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#free-pass" class="btn btn-primary btn-sm desktop-only">JOIN NOW</a>
+        <!-- Mobile Menu Trigger -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE SLIDE-IN DRAWER -->
+  <div class="drawer-backdrop" id="drawer-backdrop" tabindex="-1"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="drawer-brand">
+        <span class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="m6.5 6.5 11 11"/><path d="m21 21-1-1"/><path d="m3 3 1 1"/><path d="m18 22 4-4"/><path d="m2 6 4-4"/><path d="m3 10 7-7"/><path d="m14 21 7-7"/>
+          </svg>
+        </span>
+        <span class="brand-name">TITAN<span class="accent-orange">FORGE</span></span>
+      </div>
+      <button class="drawer-close" id="drawer-close" aria-label="Close navigation menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="drawer-body">
+      <nav class="drawer-nav" aria-label="Mobile Navigation Links">
+        <ul class="drawer-nav-list">
+          <li><a href="#services" class="drawer-nav-link">Our Services</a></li>
+          <li><a href="#plans" class="drawer-nav-link">Membership Plans</a></li>
+          <li><a href="#trainers" class="drawer-nav-link">Elite Coaches</a></li>
+          <li><a href="#gallery" class="drawer-nav-link">The Sanctuary (Gallery)</a></li>
+          <li><a href="#reviews" class="drawer-nav-link">Athlete Reviews</a></li>
+          <li><a href="#contact" class="drawer-nav-link">Contact & Hours</a></li>
+        </ul>
+      </nav>
+
+      <div class="drawer-cta-wrapper">
+        <a href="#free-pass" class="btn btn-primary btn-block drawer-btn">CLAIM FREE 1-DAY PASS</a>
+        <a href="tel:+15550192834" class="btn btn-outline btn-block drawer-btn">CALL US (24/7)</a>
+      </div>
+
+      <div class="drawer-footer">
+        <p class="drawer-info-line">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Open 24 Hours / 7 Days a Week
+        </p>
+        <p class="drawer-info-line">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          742 Ironworks Blvd, Downtown District
+        </p>
+      </div>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- 1. MOBILE HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-media">
+        <picture>
+          <source media="(max-width: 767px)" srcset="assets/images/hero-mobile.webp" type="image/webp">
+          <source media="(max-width: 767px)" srcset="assets/images/hero-mobile.jpg" type="image/jpeg">
+          <source media="(min-width: 768px)" srcset="assets/images/hero-athlete.webp" type="image/webp">
+          <img src="assets/images/hero-athlete.jpg" 
+               alt="Disciplined fitness athlete preparing for high-intensity gym workout" 
+               class="hero-img" 
+               fetchpriority="high"
+               loading="eager"
+               width="1200" 
+               height="800">
+        </picture>
+        <div class="hero-gradient-overlay"></div>
+      </div>
+
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>PREMIUM 24/7 STRENGTH & ATHLETICS</span>
+          </div>
+
+          <h1 class="hero-title">
+            FORGED IN IRON.<br>
+            <span class="text-orange">DEFINED BY DISCIPLINE.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Unleash your peak athletic potential in a 15,000 sq ft facility engineered with Eleiko Olympic platforms, metabolic conditioning, and world-class coaching.
+          </p>
+
+          <!-- Stacked CTAs for Mobile -->
+          <div class="hero-actions">
+            <a href="#free-pass" class="btn btn-primary btn-lg hero-btn">
+              CLAIM FREE 1-DAY PASS
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+            <a href="#plans" class="btn btn-secondary btn-lg hero-btn">EXPLORE MEMBERSHIPS</a>
+          </div>
+
+          <!-- Social Proof Micro-strip -->
+          <div class="hero-social-proof">
+            <div class="avatar-stack">
+              <img src="assets/images/avatar-1.webp" alt="Member Alex" class="avatar-sm" width="36" height="36" loading="lazy">
+              <img src="assets/images/avatar-2.webp" alt="Member Sarah" class="avatar-sm" width="36" height="36" loading="lazy">
+              <img src="assets/images/avatar-3.webp" alt="Member Michael" class="avatar-sm" width="36" height="36" loading="lazy">
+            </div>
+            <div class="proof-text">
+              <div class="star-rating">
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="proof-score">4.9/5</span>
+              </div>
+              <span class="proof-sub">Trusted by 1,400+ active athletes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY STATS METRICS STRIP -->
+    <section class="metrics-strip" aria-label="Gym Key Statistics">
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <span class="metric-number">15K<span class="accent-orange">+</span></span>
+            <span class="metric-label">SQ FT OLYMPIC FLOOR</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-number">24<span class="accent-orange">/7</span></span>
+            <span class="metric-label">BIOMETRIC ACCESS</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-number">50<span class="accent-orange">+</span></span>
+            <span class="metric-label">ELEIKO RACKS & PLATFORMS</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-number">98<span class="accent-orange">%</span></span>
+            <span class="metric-label">MEMBER GOAL SUCCESS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SERVICE CARDS SECTION (SWIPEABLE ON MOBILE) -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">OUR DISCIPLINES</span>
+          <h2 class="section-title">CHOOSE YOUR <span class="text-orange">BATTLEGROUND</span></h2>
+          <p class="section-desc">From raw powerlifting to metabolic burn and athletic recovery, find the program built for your ambition.</p>
+          <div class="mobile-swipe-hint">
+            <span class="swipe-hint-icon">👉</span> Swipe horizontally to browse programs
+          </div>
+        </div>
+
+        <!-- Swipeable rail on mobile -->
+        <div class="cards-rail-container">
+          <div class="services-rail" id="services-rail" role="region" aria-label="Services carousel">
+            
+            <!-- Service 1 -->
+            <article class="service-card">
+              <div class="card-media">
+                <picture>
+                  <source srcset="assets/images/service-strength.webp" type="image/webp">
+                  <img src="assets/images/service-strength.jpg" alt="Heavy barbell strength training" class="card-img" loading="lazy" width="400" height="260">
+                </picture>
+                <span class="card-category-badge">STRENGTH & HYPERTROPHY</span>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Heavy Iron & Hypertrophy</h3>
+                <p class="card-desc">Calibrated power racks, Eleiko competition plates, dumbells up to 150 lbs, and prime selectorized machines.</p>
+                <ul class="card-perks">
+                  <li>Custom periodized workout splits</li>
+                  <li>Free form analysis clinics</li>
+                  <li>Dedicated deadlift platforms</li>
+                </ul>
+                <a href="#free-pass" class="btn btn-outline btn-block card-cta">Claim Program Pass</a>
+              </div>
+            </article>
+
+            <!-- Service 2 -->
+            <article class="service-card">
+              <div class="card-media">
+                <picture>
+                  <source srcset="assets/images/service-hiit.webp" type="image/webp">
+                  <img src="assets/images/service-hiit.jpg" alt="High intensity conditioning battle ropes" class="card-img" loading="lazy" width="400" height="260">
+                </picture>
+                <span class="card-category-badge">METABOLIC CONDITIONING</span>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Titan Burn & HIIT Circuit</h3>
+                <p class="card-desc">Heart-rate tracked metabolic conditioning combining SkiErgs, assault runners, battle ropes, and kettlebells.</p>
+                <ul class="card-perks">
+                  <li>Real-time biometric heart tracking</li>
+                  <li>Burn up to 850 kcal per session</li>
+                  <li>45-minute high-efficiency formats</li>
+                </ul>
+                <a href="#free-pass" class="btn btn-outline btn-block card-cta">Claim Program Pass</a>
+              </div>
+            </article>
+
+            <!-- Service 3 -->
+            <article class="service-card">
+              <div class="card-media">
+                <picture>
+                  <source srcset="assets/images/service-turf.webp" type="image/webp">
+                  <img src="assets/images/service-turf.jpg" alt="Athletic turf sled push training" class="card-img" loading="lazy" width="400" height="260">
+                </picture>
+                <span class="card-category-badge">FUNCTIONAL ATHLETICS</span>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Sprint Turf & Functional Sleds</h3>
+                <p class="card-desc">50-yard indoor turf track for sled drives, plyometric boxes, farmer walks, and multi-directional agility drills.</p>
+                <ul class="card-perks">
+                  <li>Competition Tank & prowler sleds</li>
+                  <li>Sprint biomechanics coaching</li>
+                  <li>Rotational core power equipment</li>
+                </ul>
+                <a href="#free-pass" class="btn btn-outline btn-block card-cta">Claim Program Pass</a>
+              </div>
+            </article>
+
+            <!-- Service 4 -->
+            <article class="service-card">
+              <div class="card-media">
+                <picture>
+                  <source srcset="assets/images/service-olympic.webp" type="image/webp">
+                  <img src="assets/images/service-olympic.jpg" alt="Olympic weightlifting clean and jerk platform" class="card-img" loading="lazy" width="400" height="260">
+                </picture>
+                <span class="card-category-badge">OLYMPIC WEIGHTLIFTING</span>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Olympic Snatch & Clean Lab</h3>
+                <p class="card-desc">IWF-certified oak lifting platforms, competition bearing barbells, urethane bumper plates, and chalk stations.</p>
+                <ul class="card-perks">
+                  <li>Certified USAW coaching staff</li>
+                  <li>Slow-motion video velocity feedback</li>
+                  <li>Drop-friendly sound-isolated floor</li>
+                </ul>
+                <a href="#free-pass" class="btn btn-outline btn-block card-cta">Claim Program Pass</a>
+              </div>
+            </article>
+
+            <!-- Service 5 -->
+            <article class="service-card">
+              <div class="card-media">
+                <picture>
+                  <source srcset="assets/images/service-coach.webp" type="image/webp">
+                  <img src="assets/images/service-coach.jpg" alt="1-on-1 personal coaching session" class="card-img" loading="lazy" width="400" height="260">
+                </picture>
+                <span class="card-category-badge">1-ON-1 COACHING</span>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Private Elite Coaching</h3>
+                <p class="card-desc">Bespoke 1-on-1 coaching built around your exact genetics, biometric metrics, postural alignment, and target timeline.</p>
+                <ul class="card-perks">
+                  <li>3D InBody body composition scans</li>
+                  <li>Macro & nutrition meal blueprint</li>
+                  <li>Weekly accountability check-ins</li>
+                </ul>
+                <a href="#free-pass" class="btn btn-outline btn-block card-cta">Claim Program Pass</a>
+              </div>
+            </article>
+
+            <!-- Service 6 -->
+            <article class="service-card">
+              <div class="card-media">
+                <picture>
+                  <source srcset="assets/images/service-recovery.webp" type="image/webp">
+                  <img src="assets/images/service-recovery.jpg" alt="Infrared sauna and cold plunge recovery spa" class="card-img" loading="lazy" width="400" height="260">
+                </picture>
+                <span class="card-category-badge">RECOVERY & WELLNESS</span>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Cold Plunge & Infrared Sauna</h3>
+                <p class="card-desc">Contrast therapy suite engineered with 38°F filtered ice baths, full-spectrum infrared saunas, and NormaTec compression.</p>
+                <ul class="card-perks">
+                  <li>Accelerated CNS & muscular repair</li>
+                  <li>Hyperice percussion & compression</li>
+                  <li>Private steam shower suites</li>
+                </ul>
+                <a href="#free-pass" class="btn btn-outline btn-block card-cta">Claim Program Pass</a>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Touch-friendly Carousel Indicator Dots -->
+          <div class="carousel-dots" id="services-dots" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. MEMBERSHIP PLANS (STACKED & OPTIMISED FOR MOBILE) -->
+    <section class="section plans-section" id="plans">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">CLEAR & TRANSPARENT PRICING</span>
+          <h2 class="section-title">INVEST IN YOUR <span class="text-orange">POWER</span></h2>
+          <p class="section-desc">Zero hidden fees. Zero long-term lockups. Choose the tier that matches your dedication.</p>
+
+          <!-- Interactive Billing Toggle -->
+          <div class="billing-toggle-wrapper">
+            <span class="toggle-label" id="label-monthly">Monthly</span>
+            <button class="billing-switch" id="billing-switch" role="switch" aria-checked="false" aria-label="Toggle annual billing discount">
+              <span class="switch-handle"></span>
+            </button>
+            <span class="toggle-label" id="label-annual">Annual <span class="discount-pill">SAVE 20%</span></span>
+          </div>
+        </div>
+
+        <div class="plans-grid">
+          
+          <!-- Plan 1: Starter -->
+          <div class="plan-card">
+            <div class="plan-header">
+              <span class="plan-name">STARTER ACCESS</span>
+              <p class="plan-summary">Perfect for self-directed lifters who want high-end equipment.</p>
+              <div class="plan-price-wrapper">
+                <span class="currency">$</span>
+                <span class="price-value" data-monthly="39" data-annual="31">39</span>
+                <span class="price-period">/month</span>
+              </div>
+              <span class="billing-note" data-annual-note="Billed annually ($372/yr)">Billed monthly • Cancel anytime</span>
+            </div>
+            <div class="plan-features">
+              <ul class="feature-list">
+                <li><span class="feat-icon">✓</span> 24/7 Biometric Gym Floor Access</li>
+                <li><span class="feat-icon">✓</span> Eleiko Platforms & Free Weights</li>
+                <li><span class="feat-icon">✓</span> Luxury Locker & Towel Service</li>
+                <li><span class="feat-icon">✓</span> Titan Forge Mobile Companion App</li>
+                <li class="feat-disabled"><span class="feat-icon">✕</span> Group Functional Classes</li>
+                <li class="feat-disabled"><span class="feat-icon">✕</span> Contrast Recovery Spa</li>
+              </ul>
+            </div>
+            <div class="plan-footer">
+              <a href="#free-pass" class="btn btn-outline btn-block plan-cta">SELECT STARTER</a>
+            </div>
+          </div>
+
+          <!-- Plan 2: Pro Athlete (RECOMMENDED HIGHLIGHT) -->
+          <div class="plan-card plan-recommended">
+            <div class="recommended-badge">
+              <span>🔥 MOST POPULAR • BEST VALUE</span>
+            </div>
+            <div class="plan-header">
+              <span class="plan-name">PRO ATHLETE</span>
+              <p class="plan-summary">Our complete training system for serious results and peak conditioning.</p>
+              <div class="plan-price-wrapper">
+                <span class="currency">$</span>
+                <span class="price-value" data-monthly="69" data-annual="55">69</span>
+                <span class="price-period">/month</span>
+              </div>
+              <span class="billing-note" data-annual-note="Billed annually ($660/yr)">Billed monthly • Cancel anytime</span>
+            </div>
+            <div class="plan-features">
+              <ul class="feature-list">
+                <li><span class="feat-icon">✓</span> <strong>Everything in Starter, plus:</strong></li>
+                <li><span class="feat-icon">✓</span> Unlimited High-Intensity & Turf Classes</li>
+                <li><span class="feat-icon">✓</span> Infrared Sauna & Cold Plunge Suite</li>
+                <li><span class="feat-icon">✓</span> Monthly 1-on-1 Coach Form Review</li>
+                <li><span class="feat-icon">✓</span> 2 Free Monthly Guest Day Passes</li>
+                <li><span class="feat-icon">✓</span> Complimentary Protein Shake Bar Discount</li>
+              </ul>
+            </div>
+            <div class="plan-footer">
+              <a href="#free-pass" class="btn btn-primary btn-block plan-cta btn-lg">JOIN PRO ATHLETE NOW</a>
+            </div>
+          </div>
+
+          <!-- Plan 3: Elite Black Card -->
+          <div class="plan-card">
+            <div class="plan-header">
+              <span class="plan-name">ELITE BLACK CARD</span>
+              <p class="plan-summary">The ultimate all-inclusive VIP athletic experience.</p>
+              <div class="plan-price-wrapper">
+                <span class="currency">$</span>
+                <span class="price-value" data-monthly="119" data-annual="95">119</span>
+                <span class="price-period">/month</span>
+              </div>
+              <span class="billing-note" data-annual-note="Billed annually ($1140/yr)">Billed monthly • Cancel anytime</span>
+            </div>
+            <div class="plan-features">
+              <ul class="feature-list">
+                <li><span class="feat-icon">✓</span> <strong>Everything in Pro Athlete, plus:</strong></li>
+                <li><span class="feat-icon">✓</span> 2 Dedicated 1-on-1 PT Sessions Monthly</li>
+                <li><span class="feat-icon">✓</span> Permanent Reserved Private Locker</li>
+                <li><span class="feat-icon">✓</span> Unlimited Cryotherapy & Compression</li>
+                <li><span class="feat-icon">✓</span> Custom InBody 3D Metabolic Scans</li>
+                <li><span class="feat-icon">✓</span> Unlimited VIP Guest Passes</li>
+              </ul>
+            </div>
+            <div class="plan-footer">
+              <a href="#free-pass" class="btn btn-outline btn-block plan-cta">SELECT BLACK CARD</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="plans-guarantee">
+          <p class="guarantee-text">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <strong>100% Risk-Free 14-Day Guarantee:</strong> If you don't love your experience within 14 days, get a full refund without hassle.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. TRAINER SECTION (SWIPEABLE ON MOBILE) -->
+    <section class="section trainers-section" id="trainers">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">WORLD-CLASS COACHES</span>
+          <h2 class="section-title">GUIDED BY <span class="text-orange">CHAMPIONS</span></h2>
+          <p class="section-desc">Our coaches hold master-level accreditations, Olympic coaching records, and a passion for your personal PRs.</p>
+          <div class="mobile-swipe-hint">
+            <span class="swipe-hint-icon">👉</span> Swipe horizontally to meet the coaches
+          </div>
+        </div>
+
+        <div class="cards-rail-container">
+          <div class="trainers-rail" id="trainers-rail" role="region" aria-label="Trainers carousel">
+            
+            <!-- Trainer 1 -->
+            <article class="trainer-card">
+              <div class="trainer-media">
+                <picture>
+                  <source srcset="assets/images/trainer-1.webp" type="image/webp">
+                  <img src="assets/images/trainer-1.jpg" alt="Marcus Vance - Head Strength & Conditioning Coach" class="trainer-img" loading="lazy" width="400" height="480">
+                </picture>
+                <div class="trainer-overlay">
+                  <span class="trainer-role-badge">HEAD OF STRENGTH</span>
+                </div>
+              </div>
+              <div class="trainer-body">
+                <h3 class="trainer-name">Marcus Vance</h3>
+                <span class="trainer-creds">CSCS, USAW Level 3 • 12 Yrs Exp</span>
+                <p class="trainer-bio">Former national weightlifting coach specializing in barbell velocity, maximum force production, and knee biomechanics.</p>
+                <div class="trainer-actions">
+                  <a href="#free-pass" class="btn btn-outline btn-sm btn-block">Consult with Marcus</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Trainer 2 -->
+            <article class="trainer-card">
+              <div class="trainer-media">
+                <picture>
+                  <source srcset="assets/images/trainer-2.webp" type="image/webp">
+                  <img src="assets/images/trainer-2.jpg" alt="Elena Rostova - Functional Performance & HIIT Director" class="trainer-img" loading="lazy" width="400" height="480">
+                </picture>
+                <div class="trainer-overlay">
+                  <span class="trainer-role-badge">HIIT & CONDITIONING</span>
+                </div>
+              </div>
+              <div class="trainer-body">
+                <h3 class="trainer-name">Elena Rostova</h3>
+                <span class="trainer-creds">CrossFit L3, NASM-CPT • 9 Yrs Exp</span>
+                <p class="trainer-bio">Elite endurance and metabolic conditioning specialist focused on explosive work capacity, fat loss, and core stability.</p>
+                <div class="trainer-actions">
+                  <a href="#free-pass" class="btn btn-outline btn-sm btn-block">Consult with Elena</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Trainer 3 -->
+            <article class="trainer-card">
+              <div class="trainer-media">
+                <picture>
+                  <source srcset="assets/images/trainer-3.webp" type="image/webp">
+                  <img src="assets/images/trainer-3.jpg" alt="David Chen - Powerlifting & Hypertrophy Master" class="trainer-img" loading="lazy" width="400" height="480">
+                </picture>
+                <div class="trainer-overlay">
+                  <span class="trainer-role-badge">POWERLIFTING & PRs</span>
+                </div>
+              </div>
+              <div class="trainer-body">
+                <h3 class="trainer-name">David "The Anvil" Chen</h3>
+                <span class="trainer-creds">USAPL Elite, MS Exercise Sci • 11 Yrs</span>
+                <p class="trainer-bio">State deadlift record holder dedicated to scientific hypertrophy programming, grip strength, and injury-proof movement.</p>
+                <div class="trainer-actions">
+                  <a href="#free-pass" class="btn btn-outline btn-sm btn-block">Consult with David</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Trainer 4 -->
+            <article class="trainer-card">
+              <div class="trainer-media">
+                <picture>
+                  <source srcset="assets/images/trainer-4.webp" type="image/webp">
+                  <img src="assets/images/trainer-4.jpg" alt="Maya Lin - Mobility, Biomechanics & Recovery" class="trainer-img" loading="lazy" width="400" height="480">
+                </picture>
+                <div class="trainer-overlay">
+                  <span class="trainer-role-badge">MOBILITY & REHAB</span>
+                </div>
+              </div>
+              <div class="trainer-body">
+                <h3 class="trainer-name">Maya Lin</h3>
+                <span class="trainer-creds">DPT, NASM-CES • 8 Yrs Exp</span>
+                <p class="trainer-bio">Doctor of Physical Therapy guiding athletes through kinetic chain restoration, shoulder mobility, and rapid CNS recovery.</p>
+                <div class="trainer-actions">
+                  <a href="#free-pass" class="btn btn-outline btn-sm btn-block">Consult with Maya</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <div class="carousel-dots" id="trainers-dots" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. GALLERY (RESPONSIVE 2-COLUMN ON MOBILE + FULLSCREEN LIGHTBOX) -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">FACILITY SHOWCASE</span>
+          <h2 class="section-title">THE <span class="text-orange">IRON SANCTUARY</span></h2>
+          <p class="section-desc">15,000 square feet of hand-picked iron, acoustic shock floors, and climate-controlled precision. Tap to view full screen.</p>
+        </div>
+
+        <!-- 2-column mobile grid -->
+        <div class="gallery-grid" id="gallery-grid">
+          
+          <figure class="gallery-item" data-index="0" data-caption="Eleiko Championship Free Weight & Dumbbell Zone">
+            <picture>
+              <source srcset="assets/images/gallery-1.webp" type="image/webp">
+              <img src="assets/images/gallery-1.jpg" alt="Eleiko weight room with heavy dumbells" class="gallery-img" loading="lazy" width="600" height="450">
+            </picture>
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+              <span class="gallery-caption">Main Weight Floor</span>
+            </div>
+          </figure>
+
+          <figure class="gallery-item" data-index="1" data-caption="Calibrated Power Racks & Deadlift Platforms">
+            <picture>
+              <source srcset="assets/images/gallery-2.webp" type="image/webp">
+              <img src="assets/images/gallery-2.jpg" alt="Dumbbell racks and training floor" class="gallery-img" loading="lazy" width="600" height="450">
+            </picture>
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+              <span class="gallery-caption">Power Rack Arena</span>
+            </div>
+          </figure>
+
+          <figure class="gallery-item" data-index="2" data-caption="50-Yard Indoor Sprint Turf & Sled Track">
+            <picture>
+              <source srcset="assets/images/gallery-3.webp" type="image/webp">
+              <img src="assets/images/gallery-3.jpg" alt="Athletic training floor with sleds and turf" class="gallery-img" loading="lazy" width="600" height="450">
+            </picture>
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+              <span class="gallery-caption">Sprint Turf Track</span>
+            </div>
+          </figure>
+
+          <figure class="gallery-item" data-index="3" data-caption="Olympic Lifting Stage with Competition Bumpers">
+            <picture>
+              <source srcset="assets/images/gallery-4.webp" type="image/webp">
+              <img src="assets/images/gallery-4.jpg" alt="Olympic lifting platforms" class="gallery-img" loading="lazy" width="600" height="450">
+            </picture>
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+              <span class="gallery-caption">Olympic Barbell Stage</span>
+            </div>
+          </figure>
+
+          <figure class="gallery-item" data-index="4" data-caption="Contrast Therapy: 38°F Cold Plunge & Finnish Sauna">
+            <picture>
+              <source srcset="assets/images/gallery-5.webp" type="image/webp">
+              <img src="assets/images/gallery-5.jpg" alt="Cold plunge and sauna suite" class="gallery-img" loading="lazy" width="600" height="450">
+            </picture>
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+              <span class="gallery-caption">Cryo & Sauna Suite</span>
+            </div>
+          </figure>
+
+          <figure class="gallery-item" data-index="5" data-caption="Metabolic Boxing & Heavy Bag Studio">
+            <picture>
+              <source srcset="assets/images/gallery-6.webp" type="image/webp">
+              <img src="assets/images/gallery-6.jpg" alt="Heavy bag boxing conditioning studio" class="gallery-img" loading="lazy" width="600" height="450">
+            </picture>
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+              <span class="gallery-caption">Heavy Bag Studio</span>
+            </div>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FULLSCREEN LIGHTBOX MODAL WITH TOUCH SWIPE -->
+    <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Image gallery lightbox" aria-hidden="true">
+      <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+      
+      <div class="lightbox-header">
+        <span class="lightbox-counter" id="lightbox-counter">1 of 6</span>
+        <button class="lightbox-btn lightbox-close" id="lightbox-close" aria-label="Close lightbox">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="lightbox-content" id="lightbox-content">
+        <button class="lightbox-btn lightbox-prev" id="lightbox-prev" aria-label="Previous image">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        
+        <div class="lightbox-image-stage">
+          <img src="" alt="" class="lightbox-img" id="lightbox-img">
+          <p class="lightbox-caption" id="lightbox-caption"></p>
+        </div>
+
+        <button class="lightbox-btn lightbox-next" id="lightbox-next" aria-label="Next image">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+      
+      <div class="lightbox-hint">
+        <span>👈 Swipe left/right on mobile • Tap outside or press ESC to close 👉</span>
+      </div>
+    </div>
+
+    <!-- 8. ATHLETE REVIEWS & TESTIMONIALS (SWIPEABLE ON MOBILE) -->
+    <section class="section reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">ATHLETE STORIES</span>
+          <h2 class="section-title">REAL PEOPLE. <span class="text-orange">PROVEN PRs.</span></h2>
+          <p class="section-desc">Hear how dedicated members smashed their physical boundaries at Titan Forge.</p>
+          <div class="mobile-swipe-hint">
+            <span class="swipe-hint-icon">👉</span> Swipe horizontally to read athlete reviews
+          </div>
+        </div>
+
+        <div class="cards-rail-container">
+          <div class="reviews-rail" id="reviews-rail" role="region" aria-label="Testimonials carousel">
+            
+            <!-- Review 1 -->
+            <article class="review-card">
+              <div class="review-header">
+                <picture>
+                  <source srcset="assets/images/avatar-1.webp" type="image/webp">
+                  <img src="assets/images/avatar-1.jpg" alt="Member Alex Rivera" class="review-avatar" loading="lazy" width="52" height="52">
+                </picture>
+                <div class="review-user-info">
+                  <h3 class="review-user-name">Alex Rivera</h3>
+                  <span class="review-user-role">Member for 18 Months</span>
+                </div>
+                <div class="review-stars" aria-label="5 stars">★★★★★</div>
+              </div>
+              <div class="review-tag">
+                <span>🔥 LOST 18KG & ADDED 80KG TO DEADLIFT</span>
+              </div>
+              <p class="review-quote">
+                "I was burnt out from generic commercial gyms with broken machines and waiting in line for squat racks. Titan Forge is a completely different universe. The Eleiko equipment is pristine, the coaches actually care about your biomechanics, and the 24/7 keycard access fits my brutal work schedule."
+              </p>
+            </article>
+
+            <!-- Review 2 -->
+            <article class="review-card">
+              <div class="review-header">
+                <picture>
+                  <source srcset="assets/images/avatar-2.webp" type="image/webp">
+                  <img src="assets/images/avatar-2.jpg" alt="Member Sarah Jenkins" class="review-avatar" loading="lazy" width="52" height="52">
+                </picture>
+                <div class="review-user-info">
+                  <h3 class="review-user-name">Sarah Jenkins</h3>
+                  <span class="review-user-role">Member for 10 Months</span>
+                </div>
+                <div class="review-stars" aria-label="5 stars">★★★★★</div>
+              </div>
+              <div class="review-tag">
+                <span>⚡ COMPLETED FIRST HYROX COMPETITION</span>
+              </div>
+              <p class="review-quote">
+                "The functional sprint turf and HIIT circuits with coach Elena completely reshaped my athleticism. Having the cold plunge and infrared sauna right after grueling conditioning sessions means zero next-day soreness. Best investment I've ever made in my mental and physical health."
+              </p>
+            </article>
+
+            <!-- Review 3 -->
+            <article class="review-card">
+              <div class="review-header">
+                <picture>
+                  <source srcset="assets/images/avatar-3.webp" type="image/webp">
+                  <img src="assets/images/avatar-3.jpg" alt="Member Michael Zhang" class="review-avatar" loading="lazy" width="52" height="52">
+                </picture>
+                <div class="review-user-info">
+                  <h3 class="review-user-name">Michael Zhang</h3>
+                  <span class="review-user-role">Member for 2 Years</span>
+                </div>
+                <div class="review-stars" aria-label="5 stars">★★★★★</div>
+              </div>
+              <div class="review-tag">
+                <span>🏆 USAPL REGIONAL GOLD MEDALIST</span>
+              </div>
+              <p class="review-quote">
+                "If you care about real strength, you cannot train anywhere else. Calibrated steel plates, competition benches, chalk basins everywhere, and an environment where people celebrate your heaviest PRs. Titan Forge breathes discipline and intensity."
+              </p>
+            </article>
+
+          </div>
+
+          <div class="carousel-dots" id="reviews-dots" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. CONTACT & FREE 1-DAY PASS FORM SECTION -->
+    <section class="section contact-section" id="free-pass">
+      <div class="container">
+        <div class="contact-card-wrapper" id="contact">
+          <div class="contact-info-col">
+            <span class="section-tag">NO CONTRACTS • NO COMMITMENTS</span>
+            <h2 class="contact-title">EXPERIENCE TITAN FORGE <span class="text-orange">FREE FOR 1 DAY</span></h2>
+            <p class="contact-desc">
+              Get full biometric floor access, test our Eleiko platforms, and chat with a coach. Fill out the form and your digital entry pass will be generated instantly.
+            </p>
+
+            <div class="perks-checklist">
+              <div class="perk-row">
+                <span class="perk-check">✓</span>
+                <span>Full access to all 15,000 sq ft & platforms</span>
+              </div>
+              <div class="perk-row">
+                <span class="perk-check">✓</span>
+                <span>Free 1-on-1 movement & mobility screen</span>
+              </div>
+              <div class="perk-row">
+                <span class="perk-check">✓</span>
+                <span>Complimentary cold plunge & sauna session</span>
+              </div>
+            </div>
+
+            <div class="contact-meta-cards">
+              <div class="meta-card">
+                <span class="meta-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
+                <div>
+                  <strong>Location</strong>
+                  <p>742 Ironworks Blvd, Industrial Loft District</p>
+                </div>
+              </div>
+              <div class="meta-card">
+                <span class="meta-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </span>
+                <div>
+                  <strong>Hours</strong>
+                  <p>Open 24/7/365 with Member Biometric Keycard</p>
+                </div>
+              </div>
+              <div class="meta-card">
+                <span class="meta-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </span>
+                <div>
+                  <strong>Direct Line</strong>
+                  <p><a href="tel:+15550192834" class="phone-link">+1 (555) 019-2834</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FORM COLUMN (SINGLE-COLUMN STACKED ON MOBILE) -->
+          <div class="contact-form-col">
+            <form class="mobile-optimized-form" id="claim-pass-form" novalidate>
+              <div class="form-badge">🔥 LIMITED PASSES AVAILABLE TODAY</div>
+              <h3 class="form-heading">Claim Your Free Pass</h3>
+              <p class="form-subtext">No credit card required. Pass delivered via SMS.</p>
+
+              <!-- Full Name Field -->
+              <div class="form-group" id="group-name">
+                <label for="input-name" class="form-label">Full Name <span class="required">*</span></label>
+                <input type="text" 
+                       id="input-name" 
+                       name="name" 
+                       class="form-control" 
+                       placeholder="e.g. John Miller" 
+                       autocomplete="name" 
+                       required 
+                       aria-describedby="err-name">
+                <span class="field-error-msg" id="err-name" role="alert">Please enter your full name (at least 2 letters).</span>
+              </div>
+
+              <!-- Phone Field with numeric keypad support -->
+              <div class="form-group" id="group-phone">
+                <label for="input-phone" class="form-label">Mobile Phone Number <span class="required">*</span></label>
+                <input type="tel" 
+                       id="input-phone" 
+                       name="phone" 
+                       class="form-control" 
+                       placeholder="+1 (555) 000-0000" 
+                       inputmode="tel" 
+                       autocomplete="tel" 
+                       required 
+                       aria-describedby="err-phone">
+                <span class="field-help">Your 1-day QR access pass is sent here via SMS.</span>
+                <span class="field-error-msg" id="err-phone" role="alert">Please enter a valid phone number (min 10 digits).</span>
+              </div>
+
+              <!-- Email Field -->
+              <div class="form-group" id="group-email">
+                <label for="input-email" class="form-label">Email Address <span class="required">*</span></label>
+                <input type="email" 
+                       id="input-email" 
+                       name="email" 
+                       class="form-control" 
+                       placeholder="athlete@example.com" 
+                       autocomplete="email" 
+                       required 
+                       aria-describedby="err-email">
+                <span class="field-error-msg" id="err-email" role="alert">Please enter a valid email address.</span>
+              </div>
+
+              <!-- Primary Training Goal Dropdown -->
+              <div class="form-group" id="group-goal">
+                <label for="select-goal" class="form-label">Primary Training Ambition</label>
+                <select id="select-goal" name="goal" class="form-control select-control">
+                  <option value="strength">Heavy Strength & Powerlifting PRs</option>
+                  <option value="hypertrophy">Muscle Hypertrophy & Physique Building</option>
+                  <option value="hiit">High-Intensity Conditioning & Fat Loss</option>
+                  <option value="olympic">Olympic Weightlifting Mastery</option>
+                  <option value="recovery">Athletic Longevity & Contrast Therapy</option>
+                </select>
+              </div>
+
+              <!-- Preferred Time Dropdown -->
+              <div class="form-group" id="group-time">
+                <label for="select-time" class="form-label">Preferred Workout Time</label>
+                <select id="select-time" name="time" class="form-control select-control">
+                  <option value="morning">Early Bird (5:00 AM - 9:00 AM)</option>
+                  <option value="midday">Mid-Day (11:00 AM - 2:00 PM)</option>
+                  <option value="evening" selected>Prime Time (5:00 PM - 8:30 PM)</option>
+                  <option value="night">Night Owl (9:00 PM - 2:00 AM)</option>
+                </select>
+              </div>
+
+              <!-- Full-width Submit Button -->
+              <button type="submit" class="btn btn-primary btn-block btn-lg submit-btn" id="submit-pass-btn">
+                <span class="btn-text">GET MY FREE PASS NOW</span>
+                <span class="btn-spinner" aria-hidden="true"></span>
+              </button>
+
+              <p class="form-privacy-note">
+                🔒 Privacy guaranteed. Zero spam. We never share your data.
+              </p>
+            </form>
+
+            <!-- Success State Message Card (Hidden initially) -->
+            <div class="form-success-card" id="form-success-card" role="region" aria-live="polite" style="display: none;">
+              <div class="success-icon">🎉</div>
+              <h3 class="success-title">YOU'RE ON THE LIST!</h3>
+              <p class="success-text" id="success-custom-text">
+                Your Free 1-Day Pass voucher code has been reserved. Check your phone for your digital biometric access pass.
+              </p>
+              <div class="pass-ticket">
+                <div class="ticket-header">TITAN FORGE GYM - 1-DAY PASS</div>
+                <div class="ticket-code" id="ticket-voucher-code">TF-PASS-2026-ACTIVE</div>
+                <div class="ticket-sub">Valid for 7 days from today • Bring Photo ID</div>
+              </div>
+              <button class="btn btn-outline btn-block reset-pass-btn" id="reset-pass-btn">Register Another Pass</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 10. FLOATING WHATSAPP BUTTON (MOBILE OPTIMISED WITH SAFE AREA) -->
+  <a href="https://wa.me/15550192834?text=Hi%20Titan%20Forge%20Gym!%20I'd%20like%20to%20claim%20my%20Free%201-Day%20Pass%20and%20schedule%20a%20tour." 
+     class="whatsapp-floating" 
+     id="whatsapp-btn" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Chat with Titan Forge on WhatsApp">
+    <div class="whatsapp-pulse"></div>
+    <div class="whatsapp-icon-wrap">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.004c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </div>
+    <span class="whatsapp-label">Quick Enquiry</span>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="#" class="brand-logo footer-logo">
+            <span class="brand-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="m6.5 6.5 11 11"/><path d="m21 21-1-1"/><path d="m3 3 1 1"/><path d="m18 22 4-4"/><path d="m2 6 4-4"/><path d="m3 10 7-7"/><path d="m14 21 7-7"/>
+              </svg>
+            </span>
+            <span class="brand-name">TITAN<span class="accent-orange">FORGE</span></span>
+          </a>
+          <p class="footer-tagline">
+            Forged in Iron. Defined by Discipline. The premier 24/7 strength, conditioning and athletic recovery facility.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#services">Signature Disciplines</a></li>
+            <li><a href="#plans">Membership Tiers</a></li>
+            <li><a href="#trainers">Certified Coaches</a></li>
+            <li><a href="#gallery">Facility Tour</a></li>
+            <li><a href="#reviews">Athlete Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-hours-col">
+          <h4 class="footer-heading">Access & Hours</h4>
+          <p class="footer-hour-item"><strong>Facility Floor:</strong> 24 Hours / 365 Days</p>
+          <p class="footer-hour-item"><strong>Staffed Hours:</strong> Mon-Fri 6AM - 10PM</p>
+          <p class="footer-hour-item"><strong>Recovery Spa:</strong> 6AM - 11PM Daily</p>
+          <p class="footer-hour-item"><strong>Emergency Support:</strong> 24/7 On-Call</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 TITAN FORGE ATHLETICS LLC. ALL RIGHTS RESERVED.</p>
+        <p class="footer-meta">Designed for peak mobile & responsive performance.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
